@@ -38,7 +38,7 @@ CREATE TABLE commandes (
         REFERENCES clients(id),
 
     CONSTRAINT chk_statut_commande
-        CHECK (statut IN ('En_Attente', 'En_Livraison', 'Livree', 'Annulee'))
+        CHECK (statut IN ('En_Attente', 'Livree'))
 );
 
 CREATE TABLE pizza (
